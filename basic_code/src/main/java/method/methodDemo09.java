@@ -24,7 +24,7 @@ public class methodDemo09 {
 
 
         int[] lotteryNumber = createLottery();
-        printLotteryNumber(lotteryNumber);
+
 
         //2.利用Scanner模拟购买彩票
         int[] myLotteryNumber = buyLottery();
@@ -35,6 +35,7 @@ public class methodDemo09 {
         //3.判断中奖情况
         getWinnerNumber(lotteryNumber, myLotteryNumber);
 
+        printLotteryNumber(lotteryNumber);
 
     }
 
@@ -48,18 +49,18 @@ public class methodDemo09 {
 
         //判断中奖情况
         if (count1 == 5 && count2 == 2) {
-            System.out.println("恭喜你，中了一等奖！");
+            System.out.println("恭喜你，中了一等奖，一等奖奖品是5000万元！");
 
         } else if (count1 == 5 && count2 == 1) {
-            System.out.println("恭喜你，中二等奖！");
+            System.out.println("恭喜你，中二等奖，二等奖奖品是1000万元！！");
         } else if (count1 == 5 && count2 == 0 || count1 == 4 && count2 == 2) {
-            System.out.println("恭喜你，中三等奖！");
+            System.out.println("恭喜你，中三等奖，三等奖奖品是100万元！");
         } else if (count1 == 4 && count2 == 1 || count1 == 3 && count2 == 2) {
-            System.out.println("恭喜你，中四等奖！");
+            System.out.println("恭喜你，中四等奖，四等奖奖品是5万元！");
         } else if (count1 == 4 && count2 == 0 || count1 == 3 && count2 == 1 || count1 == 2 && count2 == 2) {
-            System.out.println("恭喜你，中五等奖！");
+            System.out.println("恭喜你，中五等奖，五等奖奖品是1000元！");
         } else if (count1 == 3 && count2 == 0 || count1 == 2 && count2 == 1 || count1 == 1 && count2 == 2 || count1 == 0 && count2 == 2) {
-            System.out.println("恭喜你，中六等奖！");
+            System.out.println("恭喜你，中六等奖，六等奖奖品是5元！");
         } else {
             System.out.println("很遗憾，没有中奖~");
         }
