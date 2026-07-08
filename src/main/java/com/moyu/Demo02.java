@@ -15,5 +15,4 @@ public class Demo02 {
         int c = num % 10;
         System.out.println("百位数：" + a + ",十位数：" + b + ",个位数：" + c);
     }
-
 }
